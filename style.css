@@ -1,0 +1,80 @@
+/* Opći stil */
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9ff;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Naslov */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Kartica */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Zaglavlje kartice */
+.card-header {
+    background: linear-gradient(90deg, #f72585, #7209b7);
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.card-header h2 {
+    margin: 0;
+}
+
+.card-header .meta {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Kod blok */
+.code {
+    background: #2d2d2d;
+    color: #eee;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 14px;
+    overflow-x: auto;
+}
+
+/* Napomena */
+.note {
+    background: #ffe5d9;
+    border-left: 5px solid #ff4500;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+/* Tagovi */
+.tags {
+    margin-top: 15px;
+}
+
+.tag {
+    background: #e0e7ff;
+    color: #3b3b98;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 5px;
+    font-size: 13px;
+}
+
