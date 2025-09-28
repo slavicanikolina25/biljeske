@@ -66,5 +66,108 @@
             </div>
         </div>
     </div>
+    <!-- Kartica 3. lekcije -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>🎯 Uređivanje pozadinske grafike u Box modelu</h2>
+                <p>Lekcija 3 • 24. rujan 2025. </p>
+            </div>
+
+            <h2>CSS background-color</h2>
+            <ul style="list-style-type: none;" class="objasnjenje">
+                <li>- the <span class="span2">background-color</span> property specifies the background color of an element.</li>
+            </ul>
+            <h3>With CSS, a color is most often specified by:</h3>
+            <ul>
+                <li>a valid color name - like "red"</li>
+                <li>a HEX value - like "#ff0000"</li>
+                <li>an RGB value - like "rgb(255,0,0)"</li>
+            </ul>
+            <h2>Opacity / Transparency</h2>
+            <ul style="list-style-type: none;" class="objasnjenje">
+                <li>- The <span class="span2">opacity</span> property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent</li>
+                <li>- When using the <span class="span2">opacity</span> property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read.</li>
+            </ul>
+            <h3>Transparency using RGBA</h3>
+            <ul style="list-style-type: none;" class="objasnjenje">
+                <li>- If you do not want to apply opacity to child elements, like in our example above, use RGBA color values.</li>
+                <li>- An RGBA color value is specified with: rgba(red, green, blue, alpha). The <i>alpha</i> parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</li>
+            </ul>
+
+            <h2>CSS background-image</h2>
+            <ul style="list-style-type: none;" class="objasnjenje">
+                <li>- The <span class="span2">background-image</span> property specifies an image to use as the background of an element.</li>
+                <li>- By default, the image is repeated so it covers the entire element.</li>
+                <li>- When using a background image, use an image that does not disturb the text.</li>
+                <li>The background image can also be set for specific elements, like the >p< element:</li>
+            </ul>
+
+            <h2>CSS background-repeat</h2>
+            <ul style="list-style-type: none;" class="objasnjenje">
+                <li>- By default, a background-image is repeated both vertically and horizontally.</li>
+                <li>- Some images should be repeated only horizontally or vertically, or they will look strange.</li>
+                <li>- To repeat an image only vertically, use <span class="span2">background-repeat:</span> <span class="span3">repeat-y;</span></li>
+                <li>- To repeat an image only horizontally, use <span class="span2">background-repeat:</span> <span class="span3">repeat-x;</span></li>
+                <li>- To show the background image only once, use <span class="span2">background-repeat:</span> <span class="span3">no-repeat;</span></li>
+            </ul>
+
+            <h2>CSS background-position</h2>
+            <ul style="list-style-type: none;" class="objasnjenje">
+                <li>- The <span class="span2">background-position</span> property is used to set the starting position of the background image.</li>
+                <li>- By default, a background-image is placed at the top-left corner of an element.</li>
+            </ul>
+
+            <h2>CSS background-attachment</h2>
+            <ul style="list-style-type: none;" class="objasnjenje">
+                <li>- The <span class="span2">background-attachment</span> property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page)</li>
+            </ul>
+
+            <h2>CSS background - Shorthand property</h2>
+            <ul style="list-style-type: none;" class="objasnjenje">
+                <li>- To shorten the code, it is possible to specify all the background properties in one single property. This is called a shorthand property.</li>
+            </ul>
+            Instead of writing: <br>
+             body { <br>
+                background-color: #ffffff; <br>
+                background-image: url("img_tree.png"); <br>
+                background-repeat: no-repeat; <br>
+                background-position: right top; <br>
+            } <br>
+            <br>
+            Use the shorthand property to set all the background properties in one declaration: <br>
+             body { <br>
+                background: #ffffff url("img_tree.png") no-repeat right top; <br>
+             } <br>
+            <br>
+            <p>When using the shorthand property the order of the property values is:</p>
+            <ul>
+                <li><span class="span2">background-color</span></li>
+                <li><span class="span2">background-image</span></li>
+                <li><span class="span2">background-position</span></li>
+                <li><span class="span2">background-size</span></li>
+                <li><span class="span2">background-repeat</span></li>
+                <li><span class="span2">background-origin</span></li>
+                <li><span class="span2">background-clip</span></li>
+                <li><span class="span2">background-attachment</span></li>
+           </ul>
+
+
+        </div>
+    </div>
+    
+ </body>
+ </html>
+   
 </body>
 </html>
+ 
