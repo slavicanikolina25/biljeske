@@ -134,3 +134,44 @@ ul{
     color: rgb(255, 131, 30);
     font-weight: bold;
 }
+/* treca lekcija */
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+  width: 800px;
+  margin: 40px auto;
+}
+
+h2 {
+  margin-top: 0;
+  color: #222;
+}
+
+em {
+  color: #555;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+.code-box {
+  background: #2c2c2c;
+  color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-family: Consolas, monospace;
+  font-size: 15px;
+  line-height: 1.6;
+}
+h2{
+    background-color: pink;
+    width: 500px;
+}
+ul{
+    background-color: beige;
+    width: 700px;
+}
