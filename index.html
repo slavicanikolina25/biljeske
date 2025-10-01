@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+¸<!DOCTYPE html>
 <html lang="hr">
 <head>
     <meta charset="UTF-8">
@@ -67,15 +67,7 @@
         </div>
     </div>
     <!-- Kartica 3. lekcije -->
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
- </head>
- <body>
+
      <div class="container">
         <div class="card">
             <div class="card-header">
@@ -165,43 +157,108 @@
         </div>
     </div>
     <!-- kartica 3 lekcije -->
-     <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+     <div class="container">
+        <!-- Kartica lekcije -->
+        <div class="card">
+            <div class="card-header">
+                <h2>🎯 Uvod u HTML - Opacity and Gradients</h2>
+                <p class="meta">Lekcija 3 • 29. rujan 2025. • 90 minuta</p>
+            </div>
+
+            <!-- Što je HTML -->
+            
+            
+             <h3>Transparency</h3>
+            <ul class="objasnjenje">
+                <li>- The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent</li>
+                <li>- When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read.</li>
+            </ul>
+            <h3>Transparency using RGBA</h3>
+            <ul class="objasnjenje">
+                <li>- If you do not want to apply opacity to child elements, like in our example above, use RGBA color values.</li>
+                <li>- An RGBA color value is specified with: rgba(red, green, blue, alpha). The <i>alpha</i> parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</li>
+            </ul>
+            <h3>Gradients</h3>
+            <ul class="objasnjenje">
+                <li>- The CSS gradient functions let you display smooth transitions between two or more colors within an element.</li>  
+            </ul>
+            <h3>CSS defines three types of gradients:</h3>
+            <ul class="objasnjenje">
+                <li><b><i>Linear Gradients</i></b> - The color transition goes down, up, left, right, or diagonally</li>
+                <li><b><i>Radial Gradients</i></b> - The color transition goes out from a central point</li>
+            </ul>
+            <h2>Linear Gradient</h2>
+            <p><span class="span2">background-image:</span> <span class="span4">linear-gradient</span><span class="span3">(direction, color-stop1, color-stop2, ...)</span>;</p>
+            <p><b>Direction:</b></p>
+            <ul class="objasnjenje">
+                <li>top to bottom (default)</li>
+                <li>bottom to top</li>
+                <li>left to right</li>
+                <li>top left to bottom right</li>
+            </ul>
+            <h3>Linear Gradient - Using Angles</h3>
+            <p>If you want more control over the direction of the gradient, you can define an angle parameter, 
+                instead of the predefined directions (to bottom, to top, to right, to left, to bottom right, etc.).</p>
+            <ul class="objasnjenje">
+                <li>A value of 0deg is equivalent to "to top".</li>
+                <li>A value of 90deg is equivalent to "to right".</li>
+                <li>A value of 180deg is equivalent to "to bottom".</li>
+                <li>A value of 270deg equivalent to "to left"</li>
+            </ul>
+            <p><span class="span2">background-image:</span> <span class="span4">linear-gradient</span><span class="span3">(angle, color-stop1, color-stop2)</span>;</p>
+            <h3>Repeating-linear-gradient</h3>
+            <p>The CSS <span class="span4">repeating-linear-gradient</span>() function is used to repeat linear gradients</p>
+            <img src="image.png" alt="" width="750px">
+
+            <h2>Radial Gradients</h2>
+            <p><span class="span2">background-image:</span> <span class="span4">radial-gradient</span><span class="span3">(shape size at position, start-color, ..., last-color)</span>;</p>
+            <p>By default, <span class="span2">shape</span> is ellipse, <span class="span2">size</span> is farthest-corner, and <span class="span2">position</span> is center.</p>
+            <p><b>Radial Gradient:</b></p>
+            <ul class="objasnjenje">
+                <li>Evenly Spaced Color Stops (this is default)</li>
+                <li>Differently Spaced Color Stops (determine with percentages after color)</li>
+            </ul>
+            <h3>Radial Gradient - Set Shape</h3>
+            <p>The <span class="span2">shape</span> parameter defines the shape of the gradient. It can take one of the following values:</p>
+            <ul class="objasnjenje">
+                <li>ellipse (this is default)</li>
+                <li>circle (you write in brackets of radial-gradient before colors)</li>
+            </ul>
+            <h3>Repeating-radial-gradient</h3>
+            <p>The CSS <span class="span4">repeating-radial-gradient</span>() function is used to repeat radial gradients</p>
+            <img src="image2.png" alt="">
+        </div>
+    </div>
+
+    
+
+            
+
+
+<!-- 
     <div class="opasiti">
-  <h2>Lekcija: CSS Opacity i Gradient</h2>
-  <p><em>Datum: 29.09.2025.</em></p>
+        <h2>Lekcija: CSS Opacity i Gradient</h2>
+             <p><em>Datum: 29.09.2025.</em></p>
 
-  <p>Naučili smo kako u CSS-u možemo koristiti:</p>
-  <ul>
-    <li><b>opacity</b> – određuje prozirnost elementa (0 = potpuno prozirno, 1 = potpuno vidljivo)</li>
-    <li><b>linear-gradient</b> – prelaz boja u ravnoj liniji</li>
-    <li><b>radial-gradient</b> – kružni prelaz boja</li>
-  </ul>
+            <p>Naučili smo kako u CSS-u možemo koristiti:</p>
+                <ul>
+                    <li><b>opacity</b> – određuje prozirnost elementa (0 = potpuno prozirno, 1 = potpuno vidljivo)</li>
+                    <li><b>linear-gradient</b> – prelaz boja u ravnoj liniji</li>
+                    <li><b>radial-gradient</b> – kružni prelaz boja</li>
+                </ul>
 
-  <div class="code-box">
-    div { <br>
-    &nbsp;&nbsp;width: 250px;<br>
-    &nbsp;&nbsp;height: 150px;<br>
-    &nbsp;&nbsp;background: linear-gradient(to right, red, yellow);<br>
-    &nbsp;&nbsp;opacity: 0.7;<br>
-    &nbsp;&nbsp;border: 2px solid black;<br>
-    &nbsp;&nbsp;margin: 15px;<br>
-    }
-  </div>
-</div>
+                <div class="code-box">
+                     div { <br>
+                         &nbsp;&nbsp;width: 250px;<br>
+                         &nbsp;&nbsp;height: 150px;<br>
+                         &nbsp;&nbsp;background: linear-gradient(to right, red, yellow);<br>
+                        &nbsp;&nbsp;opacity: 0.7;<br>
+                         &nbsp;&nbsp;border: 2px solid black;<br>
+                        &nbsp;&nbsp;margin: 15px;<br>
+                         }
+                </div>
+    </div> -->
+
 </body>
 </html>
- </body>
- </html>
-   
-</body>
-</html>
-
  
