@@ -341,6 +341,14 @@
             <p>Element s position: sticky; preklopnim položajem između a relative i fixed, ovisno o položaju pomicanja. Ljepljivi element se pozicionira dok se ne dostigne određena pozicija pomicanja- tada se "zalijepi" na tom mjestu (kao position: fixed)</p>
             <p>NAPOMENA: morate navesti barem jedno od svojstava top, right, bottom ili left, da bi ljepljivo pozicioniranje funkcioniralo</p>
             <img src="primjer6.png" alt="primjer6">
+            <h2>Z-INDEX U CSS-u</h2>
+            <ul class="objasnjenje">
+                <li>Svojstvo z-indexodređuje redoslijed pozicioniranih elemenata na slaganju.</li>
+                <li>Redoslijed slaganja definira koji element treba biti postavljen ispred ili iza drugih elemenata.</li>
+                <li>Kada su elementi pozicionirani, mogu se preklapati s drugim elementima.</li>
+                <li>Element može imati pozitivan ili negativan redoslijed steka (z-index):</li>
+            </ul>
+            
          </div>
     </div>
      <!-- Kartica 6. lekcije -->
@@ -418,13 +426,123 @@
              <img src="zaobljenikut5.png" alt="zaobljenikut5">
              <p>PRIMJER:</p>
              <img src="kut5.png" alt="kut5">
-
-            
-            
-              
-
-         </div>
+        </div>
     </div>
-</body>
+
+            
+       
+        </div>
+    </div>
+    <!-- Kartica 8. lekcije - FLEXBOX kompletna -->
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2>🎯 CSS FLEXBOX</h2>
+            <p>Lekcija 8 • 13. listopad 2025.</p>
+        </div>
+
+        <h2>Što je Flexbox?</h2>
+        <ul class="objasnjenje" style="list-style-type: none;">
+            <li>- <span class="span2">Flexbox</span> (Flexible Box Layout) je CSS modul koji omogućuje jednostavno poravnanje i raspored elemenata unutar kontejnera, čak i kada veličine elemenata nisu poznate ili se mijenjaju.</li>
+            <li>- Glavna svrha Flexboxa je raspored elemenata u jednom smjeru — <span class="span3">redak</span> ili <span class="span3">stupac</span>.</li>
+        </ul>
+
+        <h2>Kako koristiti Flexbox?</h2>
+        <ul>
+            <li>Postavi <span class="span2">display: flex;</span> na roditeljski element (kontejner).</li>
+            <li>Svi direktni potomci postaju "flex items" i mogu se fleksibilno raspoređivati.</li>
+        </ul>
+
+        <h3>Primjer:</h3>
+        <pre><code>div.container {
+  display: flex;
+}</code></pre>
+
+        <h2>Glavna svojstva Flex Containera</h2>
+        <ul>
+            <li><span class="span2">flex-direction</span> – određuje smjer glavne osi (horizontalno ili vertikalno).</li>
+            <li><span class="span2">justify-content</span> – poravnanje duž glavne osi (npr. centriranje).</li>
+            <li><span class="span2">align-items</span> – poravnanje duž poprečne osi (npr. centriranje po visini).</li>
+            <li><span class="span2">align-content</span> – poravnanje kada postoji višak prostora u poprečnoj osi (s više redova).</li>
+            <li><span class="span2">flex-wrap</span> – definira hoće li se elementi prelamati u više redova.</li>
+        </ul>
+
+        <h3>Primjer Flex Containera s više svojstava:</h3>
+        <pre><code>div.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}</code></pre>
+
+        <h2>Svojstva Flex Elemenata (items)</h2>
+        <ul>
+            <li><span class="span2">flex-grow</span> – koliko prostor može element zauzeti (širenje).</li>
+            <li><span class="span2">flex-shrink</span> – koliko se element može smanjiti.</li>
+            <li><span class="span2">flex-basis</span> – početna veličina elementa prije raspodjele prostora.</li>
+            <li><span class="span2">flex</span> – skraćeni zapis za <span class="span3">grow</span>, <span class="span3">shrink</span>, <span class="span3">basis</span>.</li>
+            <li><span class="span2">align-self</span> – poravnanje pojedinog elementa neovisno od ostalih.</li>
+        </ul>
+
+        <h3>Primjer fleksibilnog elementa:</h3>
+        <pre><code>div.item {
+  flex: 1 1 200px; /* grow, shrink, basis */
+}</code></pre>
+
+        <h2>Vrijednosti justify-content</h2>
+        <ul>
+            <li><span class="span3">flex-start</span> – elementi su poravnati lijevo (početak).</li>
+            <li><span class="span3">flex-end</span> – elementi su poravnati desno (kraj).</li>
+            <li><span class="span3">center</span> – elementi su centrirani.</li>
+            <li><span class="span3">space-between</span> – elementi su raspoređeni s razmakom između.</li>
+            <li><span class="span3">space-around</span> – razmak oko svakog elementa.</li>
+            <li><span class="span3">space-evenly</span> – jednak razmak između i oko svih elemenata.</li>
+        </ul>
+
+        <h2>Osnovne osi u Flexboxu</h2>
+        <ul>
+            <li><strong>Glavna os (main axis):</strong> definira se preko <span class="span2">flex-direction</span> (default: row).</li>
+            <li><strong>Poprečna os (cross axis):</strong> je okomita na glavnu osu.</li>
+        </ul>
+
+        <h3>Primjer: dvije kolone u jednom redu</h3>
+        <pre><code>div.container {
+  display: flex;
+  flex-direction: row;
+}
+
+div.left {
+  flex: 2;
+}
+
+div.right {
+  flex: 1;
+}</code></pre>
+
+        <h2>Responsive Layout s Flexboxom</h2>
+        <ul class="objasnjenje" style="list-style-type: none;">
+            <li>- Koristeći <span class="span2">flex-wrap: wrap</span> i <span class="span2">media queries</span> možeš lako napraviti fleksibilan dizajn koji se prilagođava uređajima.</li>
+            <li>- Idealno za moderne web aplikacije, grid sustave i komponente.</li>
+        </ul>
+
+        <h3>Mini layout primjer (3 kartice u redu):</h3>
+        <pre><code>.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 300px;
+}</code></pre>
+
+        <footer class="tags">
+            <span class="tag">CSS</span>
+            <span class="tag">Flexbox</span>
+            <span class="tag">Layout</span>
+        </footer>
+    </div>
+</div>
 </html>
  
